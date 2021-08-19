@@ -1,10 +1,6 @@
 import React from "react";
 import "./HeroSection.scss";
 
-/* <video autoPlay muted loop className="video">
-        <source src="/images/mix.mp4" />
-      </video> */
-
 function HeroSection() {
   return (
     <div className="hero">

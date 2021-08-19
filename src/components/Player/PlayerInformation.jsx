@@ -5,8 +5,7 @@ import { useState, useContext } from "react";
 import { SearchContext } from "../../App";
 
 function PlayerInformation() {
-  const { season, setSeason, data, search, statsData } =
-    useContext(SearchContext);
+  const { setSeason, data, search, statsData } = useContext(SearchContext);
 
   const [info, setInfo] = useState();
 
@@ -67,7 +66,7 @@ function PlayerInformation() {
       </div>
       {info !== undefined ? (
         <h1 className="statsFor">
-          Stats for {info.first_name} {info.last_name} in {season}
+          Stats for {info.first_name} {info.last_name} in {szn ? szn : "2020"}
         </h1>
       ) : null}
       <Grid container spacing={2} className="grid">

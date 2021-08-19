@@ -1,0 +1,151 @@
+.info {
+  height: 100%;
+  padding: 6rem;
+  padding-inline: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(7, 45, 116);
+
+  .grid {
+    padding-bottom: 3rem;
+  }
+
+  .statsFor {
+    font-size: 52px;
+    margin-bottom: 3rem;
+    color: white;
+    text-align: center;
+  }
+
+  .selectDiv {
+    margin-bottom: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    input {
+      width: 7rem;
+      height: 2rem;
+      font-size: 18px;
+      padding: 1rem;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      text-align: center;
+    }
+
+    button {
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 1rem;
+      width: 7rem;
+      height: 3rem;
+      background-color: white;
+      border: none;
+      border-radius: 5px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(207, 206, 206);
+      }
+
+      &:active {
+        background-color: whitesmoke;
+      }
+    }
+  }
+
+  .card {
+    padding: 1rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .header {
+      font-size: 42px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+
+    .headerMd {
+      font-size: 32px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+
+    .headerSm {
+      font-size: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+
+    .headerXSm {
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+
+    .text {
+      font-size: 42px;
+      font-weight: bold;
+      color: gold;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    .textSm {
+      font-size: 42px;
+      font-weight: bold;
+      color: gold;
+      text-shadow: 1px 1px 2px black;
+      margin-bottom: 0.5rem;
+    }
+
+    .textXSm {
+      font-size: 32px;
+      font-weight: bold;
+      color: gold;
+      text-shadow: 1px 1px 2px black;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media (max-width: 1510px) {
+  .headerSm {
+    font-size: 18px !important;
+  }
+
+  .textSm {
+    font-size: 32px !important;
+    margin-bottom: 1rem !important;
+  }
+}
+
+@media (max-width: 1120px) {
+  .header {
+    font-size: 32px !important;
+  }
+
+  .text {
+    font-size: 32px !important;
+  }
+}
+
+@media (max-width: 920px) {
+  .header {
+    font-size: 24px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    font-size: 18px !important;
+  }
+
+  .headerMd {
+    font-size: 18px !important;
+  }
+}

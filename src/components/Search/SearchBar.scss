@@ -1,0 +1,48 @@
+.SearchBar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35rem;
+  height: 5rem;
+  border-radius: 20px;
+  background-color: white;
+  border: solid 2px rgb(1, 12, 22);
+  box-shadow: 0px 5px 10px rgb(8, 29, 65);
+  z-index: 2;
+
+  input {
+    border: none;
+    width: 100%;
+    font-size: 24px;
+    outline: none;
+  }
+
+  .search {
+    width: 2.25rem;
+    height: 2.25rem;
+    opacity: 0.25;
+  }
+
+  .enable {
+    opacity: 1;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .SearchBar {
+    width: 20rem;
+  }
+}

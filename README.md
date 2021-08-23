@@ -2,7 +2,7 @@
 
 # 🏀 Season Stats 🏀
 
-> A web application that shows you all the seazon stats from NBA Players since 1979.
+> A web application that shows you all the season stats from NBA Players since 1979.
 
 ## Description
 

@@ -25,11 +25,6 @@ function App() {
       var options = {
         method: "GET",
         url: `https://www.balldontlie.io/api/v1/players?search=${search}`,
-        headers: {
-          "x-rapidapi-key":
-            "b0affd712amshf4fd168f680a6c3p1f73dajsn6ca91e67ef16",
-          "x-rapidapi-host": "free-nba.p.rapidapi.com",
-        },
       };
 
       axios
@@ -66,11 +61,6 @@ function App() {
       var options = {
         method: "GET",
         url: `https://www.balldontlie.io/api/v1/season_averages?season=${season}&&player_ids[]=${id}`,
-        headers: {
-          "x-rapidapi-key":
-            "b0affd712amshf4fd168f680a6c3p1f73dajsn6ca91e67ef16",
-          "x-rapidapi-host": "free-nba.p.rapidapi.com",
-        },
       };
 
       axios
